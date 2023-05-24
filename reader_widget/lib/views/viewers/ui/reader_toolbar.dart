@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_xlider/flutter_xlider.dart';
+import 'package:iridium_reader_widget/util/utils.dart';
 import 'package:iridium_reader_widget/views/viewers/ui/toolbar_button.dart';
 import 'package:iridium_reader_widget/views/viewers/ui/toolbar_page_number.dart';
 import 'package:mno_navigator/epub.dart';
@@ -12,11 +13,7 @@ class ReaderToolbar extends StatefulWidget {
   final VoidCallback onSkipLeft;
   final VoidCallback onSkipRight;
 
-  const ReaderToolbar(
-      {super.key,
-      required this.readerContext,
-      required this.onSkipLeft,
-      required this.onSkipRight});
+  const ReaderToolbar({super.key, required this.readerContext, required this.onSkipLeft, required this.onSkipRight});
 
   @override
   State<StatefulWidget> createState() => ReaderToolbarState();
@@ -44,8 +41,7 @@ class ReaderToolbarState extends State<ReaderToolbar> {
       });
     });
     pageNumberController = StreamController.broadcast();
-    _currentLocationStreamSubscription =
-        readerContext.currentLocationStream.listen((event) {
+    _currentLocationStreamSubscription = readerContext.currentLocationStream.listen((event) {
       pageNumberController.add(event.page);
     });
   }
@@ -75,13 +71,11 @@ class ReaderToolbarState extends State<ReaderToolbar> {
       );
 
   Widget _firstRow(BuildContext context) {
-    var isReversed =
-        readerContext.readingProgression?.isReverseOrder() ?? false;
+    var isReversed = readerContext.readingProgression?.isReverseOrder() ?? false;
     return Row(
       children: <Widget>[
         ToolbarButton(
-          asset:
-              'packages/iridium_reader_widget/assets/images/ic_skip_left_white_24dp.png',
+          asset: 'packages/iridium_reader_widget/assets/images/ic_skip_left_white_24dp.png',
           onPressed: onSkipLeft,
         ),
         const SizedBox(width: 8.0),
@@ -90,8 +84,7 @@ class ReaderToolbarState extends State<ReaderToolbar> {
         (isReversed ? _builderCurrentPage() : _buildNbPages(context)),
         const SizedBox(width: 8.0),
         ToolbarButton(
-          asset:
-              'packages/iridium_reader_widget/assets/images/ic_skip_right_white_24dp.png',
+          asset: 'packages/iridium_reader_widget/assets/images/ic_skip_right_white_24dp.png',
           onPressed: onSkipRight,
         ),
       ],
@@ -102,7 +95,8 @@ class ReaderToolbarState extends State<ReaderToolbar> {
         initialData: 1,
         stream: pageNumberController.stream,
         builder: (context, snapshot) => ToolbarPageNumber(
-          pageNumber: snapshot.data ?? 1,
+          pageNumber: translateInt(context, snapshot.data ?? 1, true),
+          // pageNumber: snapshot.data ?? 1,
         ),
       );
   // Widget _builderCurrentPage() => StreamBuilder<int>(
@@ -121,7 +115,8 @@ class ReaderToolbarState extends State<ReaderToolbar> {
   //     );
 
   Widget _buildNbPages(BuildContext context) => ToolbarPageNumber(
-        pageNumber: readerContext.publication?.nbPages ?? 1,
+        pageNumber: translateInt(context, readerContext.publication?.nbPages ?? 1, true),
+        // pageNumber: readerContext.publication?.nbPages ?? 1,
       );
 
   Widget _buildSlider(BuildContext context) => Expanded(
@@ -129,15 +124,12 @@ class ReaderToolbarState extends State<ReaderToolbar> {
             initialData: 1,
             stream: pageNumberController.stream,
             builder: (context, snapshot) {
-              var isReversed =
-                  readerContext.readingProgression?.isReverseOrder() ?? false;
-              var maxPageNumber =
-                  readerContext.publication?.nbPages.toDouble() ?? 1;
+              var isReversed = readerContext.readingProgression?.isReverseOrder() ?? false;
+              var maxPageNumber = readerContext.publication?.nbPages.toDouble() ?? 1;
               var curPageNum = snapshot.data?.toDouble() ?? 1;
               return FlutterSlider(
                   rtl: isReversed,
-                  onDragging: (handlerIndex, lowerValue, upperValue) =>
-                      pageNumberController.add(lowerValue.toInt()),
+                  onDragging: (handlerIndex, lowerValue, upperValue) => pageNumberController.add(lowerValue.toInt()),
                   onDragCompleted: (handlerIndex, lowerValue, upperValue) {
                     readerContext.execute(GoToPageCommand(lowerValue.toInt()));
                   },
@@ -154,8 +146,7 @@ class ReaderToolbarState extends State<ReaderToolbar> {
                     ),
                     activeTrackBar: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
-                        color:
-                            Theme.of(context).colorScheme.onPrimaryContainer),
+                        color: Theme.of(context).colorScheme.onPrimaryContainer),
                   ),
                   handler: FlutterSliderHandler(
                     child: Icon(

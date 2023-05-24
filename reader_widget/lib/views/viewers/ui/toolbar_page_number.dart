@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ToolbarPageNumber extends StatelessWidget {
-  final int pageNumber;
+  final String pageNumber;
 
   const ToolbarPageNumber({super.key, required this.pageNumber});
 
@@ -9,8 +9,8 @@ class ToolbarPageNumber extends StatelessWidget {
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Text(
-          "$pageNumber",
-          style: Theme.of(context).textTheme.bodyText2?.copyWith(
+          pageNumber,
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Theme.of(context).colorScheme.onPrimaryContainer,
               ),
         ),
