@@ -23,7 +23,11 @@ dependencies:
       path: reader_widget/lib/components/shared
     # path: ../shared
   mno_streamer:
-    path: ../streamer
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/streamer
+    # path: ../streamer
   mno_webview:
     path: ../webview
   bloc: ^8.1.1
