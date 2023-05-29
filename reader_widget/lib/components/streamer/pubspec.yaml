@@ -18,11 +18,13 @@ dependencies:
     git: 
       url: git@github.com:ddicko/commons.git
       ref: clear_vision
+      path: components/commons
     # path: ../commons
   mno_shared:
     git:
       url: git@github.com:ddicko/shared.git
       ref: clear_vision
+      path: components/shared
     # path: ../shared
   path: ^1.8.2
 
