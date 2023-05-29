@@ -22,7 +22,10 @@ dependencies:
   universal_io: ^2.2.0
   xml: ^6.2.2
   mno_commons:
-    path: ../commons
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/commons
   path: ^1.8.2
 
 dev_dependencies:
