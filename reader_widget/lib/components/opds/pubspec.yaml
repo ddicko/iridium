@@ -14,6 +14,8 @@ dependencies:
   http: ^0.13.5
   universal_io: ^2.2.0
   xml: ^6.2.2
+
+dependency_overrides:
   mno_commons:
     git: 
       url: git@github.com:ddicko/commons.git
@@ -26,6 +28,7 @@ dependencies:
       ref: clear_vision1
       path: reader_widget/lib/components/shared
     # path: ../shared
+    
 
 dev_dependencies:
   lints: ^2.0.1
