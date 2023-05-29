@@ -30,9 +30,17 @@ dependencies:
   url_launcher: ^6.1.10
   uuid: ^3.0.7
   mno_commons:
-    path: ../commons
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/commons
+    # path: ../commons
   mno_shared:
-    path: ../shared
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/shared
+    # path: ../shared
 
 dev_dependencies:
   test: ^1.24.2
