@@ -33,7 +33,11 @@ dependencies:
   iridium_reader_widget:
     path: ../
   mno_webview:
-    path: ../lib/components/webview
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/webview
+    # path: ../lib/components/webview
 
   flutter_fimber: ^0.6.5
   fimber: ^0.6.6

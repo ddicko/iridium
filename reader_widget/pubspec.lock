@@ -284,51 +284,65 @@ packages:
   mno_commons:
     dependency: "direct main"
     description:
-      path: "lib/components/commons"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/commons"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.2"
   mno_navigator:
     dependency: "direct main"
     description:
-      path: "lib/components/navigator"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/navigator"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.0"
   mno_opds:
     dependency: "direct main"
     description:
-      path: "lib/components/opds"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/opds"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.1"
   mno_server:
     dependency: "direct main"
     description:
-      path: "lib/components/server"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/server"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.0"
   mno_shared:
     dependency: "direct main"
     description:
-      path: "lib/components/shared"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/shared"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.3"
   mno_streamer:
     dependency: "direct main"
     description:
-      path: "lib/components/streamer"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/streamer"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.1.1"
   mno_webview:
     dependency: "direct main"
     description:
-      path: "lib/components/webview"
-      relative: true
-    source: path
+      path: "reader_widget/lib/components/webview"
+      ref: clear_vision1
+      resolved-ref: f344e91c8d56abe3494502c8301ca5c7a069b02b
+      url: "git@github.com:ddicko/iridium.git"
+    source: git
     version: "0.0.1"
   nested:
     dependency: transitive
