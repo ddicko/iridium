@@ -11,20 +11,41 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mno_commons:
-    path: lib/components/commons
+  mno_commons: 
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/commons
   mno_navigator:
-    path: lib/components/navigator
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/navigator
   mno_opds:
-    path: lib/components/opds
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/opds
   mno_server:
-    path: lib/components/server
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/server
   mno_shared:
-    path: lib/components/shared
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/shared
   mno_streamer:
-    path: lib/components/streamer
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/streamer
   mno_webview:
-    path: lib/components/webview
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision
+      path: components/webview
   cupertino_icons: ^1.0.5
   dartx: ^1.1.0
   dfunc: ^0.8.2

@@ -15,9 +15,15 @@ dependencies:
   universal_io: ^2.2.0
   xml: ^6.2.2
   mno_commons:
-    path: ../commons
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision
+    # path: ../commons
   mno_shared:
-    path: ../shared
+    git:
+      url: git@github.com:ddicko/shared.git
+      ref: clear_vision
+    # path: ../shared
   path: ^1.8.2
 
 dev_dependencies:
