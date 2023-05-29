@@ -29,7 +29,11 @@ dependencies:
       path: reader_widget/lib/components/streamer
     # path: ../streamer
   mno_webview:
-    path: ../webview
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/webview
+    # path: ../webview
   bloc: ^8.1.1
   dartx: ^1.1.0
   dfunc: ^0.8.2
