@@ -40,8 +40,6 @@ dependencies:
       ref: clear_vision1
       path: reader_widget/lib/components/streamer
     # path: ../streamer
-
-dependency_overrides:
   mno_webview:
     git: 
       url: git@github.com:ddicko/commons.git
@@ -49,7 +47,7 @@ dependency_overrides:
       path: reader_widget/lib/components/webview
     # path: ../webview
 
-    
+
 dev_dependencies:
   test: ^1.24.2
   lints: ^2.0.1
