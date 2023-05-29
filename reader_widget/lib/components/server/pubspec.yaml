@@ -16,12 +16,6 @@ dependencies:
       url: git@github.com:ddicko/iridium.git
       ref: clear_vision1
       path: reader_widget/lib/components/commons
-  mno_shared:
-    git: 
-      url: git@github.com:ddicko/commons.git
-      ref: clear_vision1
-      path: reader_widget/lib/components/shared
-    # path: ../shared
   bloc: ^8.1.1
   dartx: ^1.1.0
   dfunc: ^0.8.2
@@ -35,13 +29,20 @@ dependencies:
   universal_io: ^2.2.0
 
 dependency_overrides:
+  mno_shared:
+    git: 
+      url: git@github.com:ddicko/commons.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/shared
+    # path: ../shared
+    
   mno_streamer:
     git: 
       url: git@github.com:ddicko/commons.git
       ref: clear_vision1
       path: reader_widget/lib/components/streamer
     # path: ../streamer
-    
+
   mno_webview:
     git: 
       url: git@github.com:ddicko/commons.git
