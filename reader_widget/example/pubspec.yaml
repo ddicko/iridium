@@ -33,7 +33,7 @@ dependencies:
   iridium_reader_widget:
     path: ../
   mno_webview:
-    path: ../../components/webview
+    path: ../lib/components/webview
 
   flutter_fimber: ^0.6.5
   fimber: ^0.6.6

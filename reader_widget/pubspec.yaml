@@ -12,19 +12,19 @@ dependencies:
   flutter:
     sdk: flutter
   mno_commons:
-    path: ../components/commons
+    path: lib/components/commons
   mno_navigator:
-    path: ../components/navigator
+    path: lib/components/navigator
   mno_opds:
-    path: ../components/opds
+    path: lib/components/opds
   mno_server:
-    path: ../components/server
+    path: lib/components/server
   mno_shared:
-    path: ../components/shared
+    path: lib/components/shared
   mno_streamer:
-    path: ../components/streamer
+    path: lib/components/streamer
   mno_webview:
-    path: ../components/webview
+    path: lib/components/webview
   cupertino_icons: ^1.0.5
   dartx: ^1.1.0
   dfunc: ^0.8.2
