@@ -14,38 +14,38 @@ dependencies:
   mno_commons: 
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/commons
+      ref: clear_vision1
+      path: reader_widget/lib/components/commons
   mno_navigator:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/navigator
+      ref: clear_vision1
+      path: reader_widget/lib/components/navigator
   mno_opds:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/opds
+      ref: clear_vision1
+      path: reader_widget/lib/components/opds
   mno_server:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/server
+      ref: clear_vision1
+      path: reader_widget/lib/components/server
   mno_shared:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/shared
+      ref: clear_vision1
+      path: reader_widget/lib/components/shared
   mno_streamer:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/streamer
+      ref: clear_vision1
+      path: reader_widget/lib/components/streamer
   mno_webview:
     git: 
       url: git@github.com:ddicko/iridium.git
-      ref: clear_vision
-      path: components/webview
+      ref: clear_vision1
+      path: reader_widget/lib/components/webview
   cupertino_icons: ^1.0.5
   dartx: ^1.1.0
   dfunc: ^0.8.2
