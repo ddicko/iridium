@@ -12,7 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   mno_commons:
-    path: ../commons
+    git: 
+      url: git@github.com:ddicko/iridium.git
+      ref: clear_vision1
+      path: reader_widget/lib/components/commons
   mno_shared:
     path: ../shared
   mno_streamer:
