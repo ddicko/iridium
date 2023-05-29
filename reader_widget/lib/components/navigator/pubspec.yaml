@@ -24,6 +24,8 @@ dependencies:
   rxdart: ^0.27.7
   universal_io: ^2.2.0
 
+
+dependency_overrides:
   mno_commons:
     git: 
       url: git@github.com:ddicko/commons.git
@@ -48,8 +50,7 @@ dependencies:
       ref: clear_vision1
       path: reader_widget/lib/components/streamer
     # path: ../streamer
-
-dependency_overrides:
+    
   mno_webview:
     git: 
       url: git@github.com:ddicko/commons.git
